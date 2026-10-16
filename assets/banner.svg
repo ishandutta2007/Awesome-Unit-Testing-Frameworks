@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a" />
+      <stop offset="50%" stop-color="#121829" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Accent Gradient for Text -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glowing Orb Gradients -->
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glowGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" stroke-opacity="0.3" />
+    </pattern>
+
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 48px;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        fill: #94a3b8;
+      }
+      .tag-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #cbd5e1;
+      }
+      .badge-label {
+        font-family: "Fira Code", monospace, -apple-system, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      /* Dynamic Animations */
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(7px); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.25; transform: scale(1); }
+        50% { opacity: 0.45; transform: scale(1.08); }
+      }
+      @keyframes pulseGreenDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.4; transform: scale(0.85); }
+      }
+
+      .animated-float-1 {
+        animation: floatSlow 6s ease-in-out infinite;
+      }
+      .animated-float-2 {
+        animation: floatReverse 7s ease-in-out infinite;
+      }
+      .animated-glow-1 {
+        transform-origin: 200px 100px;
+        animation: pulseGlow 8s ease-in-out infinite;
+      }
+      .animated-glow-2 {
+        transform-origin: 1000px 280px;
+        animation: pulseGlow 9s ease-in-out infinite;
+      }
+      .status-dot {
+        transform-origin: center;
+        animation: pulseGreenDot 2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="380" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="380" rx="16" fill="url(#gridPattern)" />
+
+  <!-- Animated Ambient Glows (Behind all content) -->
+  <circle cx="200" cy="100" r="180" fill="url(#glowCyan)" class="animated-glow-1" />
+  <circle cx="1000" cy="280" r="220" fill="url(#glowPurple)" class="animated-glow-2" />
+  <circle cx="600" cy="190" r="140" fill="url(#glowGreen)" opacity="0.3" />
+
+  <!-- Floating Decorative Pill 1 (Top Left) -->
+  <g class="animated-float-1" filter="url(#badgeShadow)">
+    <rect x="50" y="45" width="220" height="42" rx="21" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="72" cy="66" r="5" fill="#10b981" class="status-dot" />
+    <text x="88" y="70" class="badge-label" fill="#38bdf8">PASS</text>
+    <text x="132" y="70" class="badge-label" fill="#e2e8f0">unit.test.ts</text>
+    <text x="222" y="70" class="badge-label" fill="#64748b">0.2s</text>
+  </g>
+
+  <!-- Floating Decorative Pill 2 (Top Right) -->
+  <g class="animated-float-2" filter="url(#badgeShadow)">
+    <rect x="930" y="45" width="220" height="42" rx="21" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4" />
+    <text x="952" y="71" font-size="14">⚡</text>
+    <text x="975" y="70" class="badge-label" fill="#a5b4fc">Vitest 5.0</text>
+    <text x="1055" y="70" class="badge-label" fill="#34d399">100% ESM</text>
+  </g>
+
+  <!-- Floating Decorative Pill 3 (Bottom Left) -->
+  <g class="animated-float-2" filter="url(#badgeShadow)">
+    <rect x="50" y="295" width="240" height="42" rx="21" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="72" cy="316" r="5" fill="#10b981" />
+    <text x="88" y="320" class="badge-label" fill="#10b981">Coverage: 98.4%</text>
+    <text x="210" y="320" class="badge-label" fill="#94a3b8">V8</text>
+  </g>
+
+  <!-- Floating Decorative Pill 4 (Bottom Right) -->
+  <g class="animated-float-1" filter="url(#badgeShadow)">
+    <rect x="910" y="295" width="240" height="42" rx="21" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.4" />
+    <text x="930" y="321" font-size="14">🎭</text>
+    <text x="955" y="320" class="badge-label" fill="#e879f9">Playwright</text>
+    <text x="1040" y="320" class="badge-label" fill="#38bdf8">Trace View</text>
+  </g>
+
+  <!-- Center Main Content (Always Crisp in Foreground) -->
+  <g filter="url(#dropShadow)">
+    <!-- Top Category Tag -->
+    <rect x="475" y="55" width="250" height="32" rx="16" fill="#1e293b" fill-opacity="0.95" stroke="#334155" stroke-width="1" />
+    <circle cx="493" cy="71" r="4" fill="#38bdf8" />
+    <text x="506" y="75" class="tag-text" fill="#93c5fd">CURATED DEVELOPER GUIDE</text>
+
+    <!-- Main Title -->
+    <text x="600" y="145" text-anchor="middle" class="title-text" fill="url(#titleGrad)">Awesome Unit Testing</text>
+    <text x="600" y="198" text-anchor="middle" class="title-text" fill="#ffffff">Frameworks &amp; Runners</text>
+
+    <!-- Subtitle -->
+    <text x="600" y="242" text-anchor="middle" class="subtitle-text">
+      The authoritative ecosystem guide to fast test runners, assertion engines &amp; cloud testing labs
+    </text>
+
+    <!-- Feature Pills in Center -->
+    <g transform="translate(295, 268)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="185" height="30" rx="15" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="92" y="19" text-anchor="middle" class="tag-text" fill="#38bdf8">⚡ Fast Test Execution</text>
+
+      <!-- Pill 2 -->
+      <rect x="200" y="0" width="195" height="30" rx="15" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="297" y="19" text-anchor="middle" class="tag-text" fill="#a855f7">🧪 ESM-Native Tooling</text>
+
+      <!-- Pill 3 -->
+      <rect x="410" y="0" width="200" height="30" rx="15" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="510" y="19" text-anchor="middle" class="tag-text" fill="#10b981">☁️ Cloud Grid Testing</text>
+    </g>
+  </g>
+</svg>
