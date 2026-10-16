@@ -9,7 +9,7 @@
 
 <br/>
 
-<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a> <a href="https://discord.gg/jc4xtF58Ve"><img src="http://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Unit-Testing-Frameworks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Unit-Testing-Frameworks?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a> <a href="https://github.com/ishandutta2007/Awesome-Unit-Testing-Frameworks/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Unit-Testing-Frameworks?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a> <a href="https://github.com/ishandutta2007/Awesome-Unit-Testing-Frameworks/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Unit-Testing-Frameworks?style=flat-square&color=purple" alt="Issues" /></a> <a href="https://github.com/ishandutta2007/Awesome-Unit-Testing-Frameworks/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a> <a href="https://github.com/ishandutta2007/Awesome-Unit-Testing-Frameworks/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License" /></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a> <a href="https://discord.gg/jc4xtF58Ve"><img src="http://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Unit-Testing-Frameworks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Unit-Testing-Frameworks?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a> <a href="https://github.com/ishandutta2007/Awesome-Unit-Testing-Frameworks/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Unit-Testing-Frameworks?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a> <a href="https://github.com/ishandutta2007/Awesome-Unit-Testing-Frameworks/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Unit-Testing-Frameworks?style=flat-square&color=purple" alt="Issues" /></a> <a href="https://github.com/ishandutta2007/Awesome-Unit-Testing-Frameworks/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a> <a href="https://github.com/ishandutta2007/Awesome-Unit-Testing-Frameworks/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License" /></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 <br/>
 
@@ -87,7 +87,7 @@ The table below compiles leading hosted cloud testing platforms and device labs.
 
 ## 🚀 Top Open-Source Testing Frameworks (Ranked by Stars)
 
-The following open-source frameworks and test runners are sorted in **descending order by GitHub star count**. Each project includes official stargazers badges linking directly to their GitHub community.
+The following open-source frameworks and test runners are sorted in **descending order by GitHub Stars_Count**. Each project includes official stargazers badges linking directly to their GitHub community.
 
 ### 1. [Playwright](https://github.com/microsoft/playwright) [![Playwright Stars](https://img.shields.io/github/stars/microsoft/playwright?style=social&color=white)](https://github.com/microsoft/playwright/stargazers)
 - **Primary Languages**: TypeScript, JavaScript, Python, C#, Java
@@ -206,7 +206,7 @@ Contributions to expand and refine this ecosystem are warmly welcome!
 2. 🌿 Create your feature branch (`git checkout -b feature/add-testing-framework`).
 3. 📝 Update [`README.md`](README.md) following the existing structured format:
    - Framework or SaaS platform name
-   - Official link and valid GitHub star badge
+   - Official link and valid GitHub Stars_Badge
    - Exact pricing and free tier specs (for SaaS) or licensing and architectural features (for OSS)
 4. 📬 Submit a Pull Request with a clear description of why the tool adds value to the community.
 
